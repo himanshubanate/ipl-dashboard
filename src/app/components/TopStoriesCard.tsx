@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface TopStoriesCardProps {
@@ -15,7 +16,7 @@ const TopStoriesCard: React.FC<TopStoriesCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
-      <img
+      <Image
         src={image}
         alt={title}
         className="w-full md:w-1/3 object-cover h-48 md:h-auto"
